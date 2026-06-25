@@ -26,7 +26,7 @@ void loop() {
   }
   line.show();
   delay(1000);
-
+  // радуга
   for(long c=0;c<5*65536;c+=256) {
     for(int i=0;i<leds;++i) {
       int color=c+(i*65536L/leds);
@@ -35,6 +35,18 @@ void loop() {
     line.show();
     delay(10); 
   }
+  // гимн
+  for(int i=0;i<leds;++i) {
+    if(i<24) {
+      line.setPixelColor(i,255,255,255);
+    } else if(i < 40) {
+      line.setPixelColor(i,0,0,255);
+    } else {
+      line.setPixelColor(i,255,0,0);
+    }
+  }
+  line.show();
+  delay(5000);
 
   line.clear();
   line.show();
