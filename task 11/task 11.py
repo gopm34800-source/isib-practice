@@ -18,3 +18,10 @@ x,y,w,h=cv2.boundingRect(largest_contour)
 center_x = int(x + w / 2)
 center_y = int(y + h / 2)
 
+cv2.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 3)
+
+cv2.circle(image, (center_x,center_y), 5, (0, 0, 255), -1)
+
+cv2.imshow("result", image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
