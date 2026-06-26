@@ -3,12 +3,12 @@
   "author": "илья петров",
   "editor": "wokwi",
   "parts": [
-    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -0.6, "attrs": {} },
     {
       "type": "wokwi-servo",
       "id": "servo1",
-      "top": 25,
-      "left": 298.6,
+      "top": 27.8,
+      "left": 299.4,
       "rotate": 270,
       "attrs": {}
     }
