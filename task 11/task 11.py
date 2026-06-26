@@ -12,3 +12,9 @@ contours,hierarchy=cv2.findContours(mask.copy(),cv2.RETR_TREE,cv2.CHAIN_APPROX_S
 sorted_contours=sorted(contours,key=cv2.contourArea,reverse=True)
 
 largest_contour=sorted_contours[0]
+
+x,y,w,h=cv2.boundingRect(largest_contour)
+
+center_x = int(x + w / 2)
+center_y = int(y + h / 2)
+
