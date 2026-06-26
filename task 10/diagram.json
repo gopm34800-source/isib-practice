@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "илья петров",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 25,
+      "left": 298.6,
+      "rotate": 270,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "servo1:PWM", "uno:3", "green", [ "h29.8", "v-198.8", "h-195.4" ] ],
+    [ "servo1:V+", "uno:5V", "red", [ "v60.4", "h-223.1" ] ],
+    [ "servo1:GND", "uno:GND.3", "black", [ "v50.8", "h-194.6" ] ]
+  ],
+  "dependencies": {}
+}
